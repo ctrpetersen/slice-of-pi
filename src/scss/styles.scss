@@ -1,15 +1,35 @@
-$fontColor: #0091aa;
-$colorHeading: #be4a14;
-#content  // div with id: content
-{
-    color: $fontColor;
+$background-color: #2f4f4f;
+$foreground-color: #182828;
+$font-family: 'Raleway', sans-serif;
+
+body{
+    background-color: $background-color;
 }
 
-h2
-{
-    color: $colorHeading;
+canvas{
+    background-color: $foreground-color;
+    position: absolute;
+    left: 50%;
+    top: 4%;
+    transform: translate(-50%);
 }
 
-h1{
-    @extend h2;
+button{
+    font-family: $font-family;
+    background-color: $foreground-color;
+    color: white;
+    height: 28px;
+    font-size: 120%;
+}
+
+#startStopBtn{
+    position: absolute;
+    left: 32%;
+    transform: translate(-50%);
+}
+
+#resetBtn{
+    position: absolute;
+    left: 69.1%;
+    transform: translate(-50%);
 }
